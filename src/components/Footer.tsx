@@ -24,7 +24,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 font-display">Links</h4>
+            <h4 className="font-semibold text-foreground mb-4 font-display">Atalhos</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/#funcionalidades" className="text-muted-foreground hover:text-foreground transition-colors">
