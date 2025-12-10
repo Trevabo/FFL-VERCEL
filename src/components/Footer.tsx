@@ -13,8 +13,8 @@ export default function Footer() {
                 <span className="text-2xl font-bold text-primary">FFL</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">Fast Fight League</span>
-                <span className="text-sm text-muted-foreground">Bot de Discord</span>
+                <span className="text-xl font-bold text-foreground">FFL</span>
+                <span className="text-sm text-muted-foreground">Fast Fight League</span>
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
