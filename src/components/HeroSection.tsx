@@ -99,7 +99,7 @@ export default function HeroSection() {
             }} className="grid grid-cols-3 gap-8">
               {[{
                 label: 'Cartas',
-                value: '500+',
+                value: '25000+',
                 icon: Sparkles
               }, {
                 label: 'Servidores',
@@ -107,7 +107,7 @@ export default function HeroSection() {
                 icon: Users
               }, {
                 label: 'Colecionadores',
-                value: '50K+',
+                value: '600+',
                 icon: Trophy
               }].map((stat, index) => (
                 <div key={index} className="text-center lg:text-left">
