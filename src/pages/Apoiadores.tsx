@@ -10,7 +10,7 @@ const tiers = [{
   price: 'R$ 4,99/mês',
   color: 'text-green-400',
   borderColor: 'border-green-400/30',
-  benefits: ['Cargo de acordo com o seu apoiador no discord oficial.', 'Emote mensal'., 'Votação em cosméticos.']
+  benefits: ['Cargo de acordo com o seu apoiador no discord oficial.', 'Emote mensal.', 'Votação em cosméticos.']
 }, {
   name: 'Apoiador Diamante',
   icon: Star,
