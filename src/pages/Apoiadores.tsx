@@ -4,33 +4,34 @@ import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart, Star, Crown, Zap, Gift, ExternalLink } from 'lucide-react';
-const tiers = [{
-  name: 'Apoiador Esmeralda',
-  icon: Heart,
-  price: 'R$ 4,99/mês',
-  color: 'text-green-400',
-  borderColor: 'border-green-400/30',
-  benefits: ['Cargo de acordo com o seu apoiador no discord oficial.', 'Emote mensal.', 'Votação em cosméticos.']
-},
-  mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=d13e08943a07423789a80e93b94f37f8'
-{
-  name: 'Apoiador Diamante',
-  icon: Star,
-  price: 'R$ 14,99/mês',
-  color: 'text-blue-400',
-  borderColor: 'border-blue-400/30',
-  benefits: ['Todos os benefícios anteriores.', '+4 Stack de drops.', 'Banner exclusivo mensal.']
-},
-  mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=3115c3973ade4d11b6fbda10372e5498'
-{
-  name: 'Apoiador Ametista',
-  icon: Crown,
-  price: 'R$ 24,99/mês',
-  color: 'text-primary',
-  borderColor: 'border-primary/30',
-  benefits: ['Todos os benefícios anteriores.', 'Criação de 1 torneio personalizado por dia.', 'Aumento de ganho de lingotes por drops (1-5).']
-}
-  mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=ded3a7cace6a401391b3cca1bb97c923'
+const tiers = [
+  {
+    name: 'Apoiador Esmeralda',
+    icon: Heart,
+    price: 'R$ 4,99/mês',
+    color: 'text-green-400',
+    borderColor: 'border-green-400/30',
+    benefits: ['Cargo de acordo com o seu apoiador no discord oficial.', 'Emote mensal.', 'Votação em cosméticos.'],
+    mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=d13e08943a07423789a80e93b94f37f8'
+  },
+  {
+    name: 'Apoiador Diamante',
+    icon: Star,
+    price: 'R$ 14,99/mês',
+    color: 'text-blue-400',
+    borderColor: 'border-blue-400/30',
+    benefits: ['Todos os benefícios anteriores.', '+4 Stack de drops.', 'Banner exclusivo mensal.'],
+    mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=3115c3973ade4d11b6fbda10372e5498'
+  },
+  {
+    name: 'Apoiador Ametista',
+    icon: Crown,
+    price: 'R$ 24,99/mês',
+    color: 'text-primary',
+    borderColor: 'border-primary/30',
+    benefits: ['Todos os benefícios anteriores.', 'Criação de 1 torneio personalizado por dia.', 'Aumento de ganho de lingotes por drops (1-5).'],
+    mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=ded3a7cace6a401391b3cca1bb97c923'
+  }
 ];
 export default function Apoiadores() {
   return <div className="min-h-screen bg-background">
