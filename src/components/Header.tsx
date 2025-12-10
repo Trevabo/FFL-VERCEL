@@ -37,7 +37,7 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative">
               <img 
-                src="/assets/Logo 02@3x.jpg"
+                src="/assets/Logo-02@3x.jpg"
                 alt="FFL Logo" 
                 className="w-10 h-10 object-contain rounded-full transition-transform group-hover:scale-105"
               />
