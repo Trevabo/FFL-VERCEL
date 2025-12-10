@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from 'FFL-VERCEL/src/assets/Logo-02@3x.jpg';
 
 const navLinks = [
   { name: 'Início', href: '/', isRoute: true },
@@ -35,7 +36,12 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative">
-              <Trophy className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors" />
+              <img 
+                src="/assets/Logo 02@3x.jpg"
+                alt="FFL Logo" 
+                className="w-10 h-10 object-contain rounded-full transition-transform group-hover:scale-105"
+              />
+              
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex flex-col">
