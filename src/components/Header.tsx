@@ -11,10 +11,9 @@ const navLinks = [
   { name: 'Comandos', href: '/comandos', isRoute: true },
   { name: 'Apoiadores', href: '/apoiadores', isRoute: true },
   { name: 'Comunidade', href: '/#comunidade', isRoute: false },
-  // NOVA GUIA: VOTAR - SUBSTITUA O LINK PELO SEU SITE DE VOTAÇÃO
   { 
     name: 'Votar', 
-    href: 'https://top.gg/bot/1389341948149497886/vote', // SUBSTITUA POR SEU LINK
+    href: 'https://top.gg/bot/1389341948149497886/vote', 
     isRoute: false,
     external: true,
     icon: Vote 
