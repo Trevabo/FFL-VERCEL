@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Vote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '@/assets/Logo-02.jpg';
@@ -11,6 +11,14 @@ const navLinks = [
   { name: 'Comandos', href: '/comandos', isRoute: true },
   { name: 'Apoiadores', href: '/apoiadores', isRoute: true },
   { name: 'Comunidade', href: '/#comunidade', isRoute: false },
+  // NOVA GUIA: VOTAR - SUBSTITUA O LINK PELO SEU SITE DE VOTAÇÃO
+  { 
+    name: 'Votar', 
+    href: 'https://top.gg/bot/1389341948149497886/vote', // SUBSTITUA POR SEU LINK
+    isRoute: false,
+    external: true,
+    icon: Vote 
+  },
 ];
 
 export default function Header() {
@@ -51,26 +59,47 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              link.isRoute ? (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium"
-                >
-                  {link.name}
-                </a>
-              )
-            ))}
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => {
+              if (link.isRoute) {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors font-medium hover:scale-105"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              } else {
+                // Para links externos (como Votar)
+                if (link.external) {
+                  return (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors font-medium hover:scale-105 group/vote"
+                    >
+                      {link.icon && <link.icon className="w-4 h-4 group-hover/vote:text-yellow-500" />}
+                      {link.name}
+                    </a>
+                  );
+                } else {
+                  // Para âncoras internas
+                  return (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors font-medium hover:scale-105"
+                    >
+                      {link.name}
+                    </a>
+                  );
+                }
+              }
+            })}
             <Button variant="hero" size="default" asChild>
               <a href="https://discord.com/oauth2/authorize?client_id=1389341948149497886&permissions=1126881307388944&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">
                 Adicionar Bot
@@ -97,29 +126,51 @@ export default function Header() {
               className="md:hidden border-t border-primary/20"
             >
               <div className="py-4 space-y-4">
-                {navLinks.map((link) => (
-                  link.isRoute ? (
-                    <Link
-                      key={link.name}
-                      to={link.href}
-                      className="block text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
-                  ) : (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className="block text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.name}
-                    </a>
-                  )
-                ))}
-                <Button variant="hero" size="lg" className="w-full" asChild>
-                  <a href="https://discord.com/oauth2/authorize?client_id=1389341948149497886&permissions=1126881307388944&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">
+                {navLinks.map((link) => {
+                  if (link.isRoute) {
+                    return (
+                      <Link
+                        key={link.name}
+                        to={link.href}
+                        className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors font-medium py-2 px-4 rounded-lg hover:bg-primary/5"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {link.icon && <link.icon className="w-4 h-4" />}
+                        {link.name}
+                      </Link>
+                    );
+                  } else {
+                    if (link.external) {
+                      return (
+                        <a
+                          key={link.name}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors font-medium py-2 px-4 rounded-lg hover:bg-primary/5"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {link.icon && <link.icon className="w-4 h-4" />}
+                          {link.name}
+                          <span className="text-xs bg-yellow-500/20 text-yellow-600 px-2 py-1 rounded-full">Votar</span>
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <a
+                          key={link.name}
+                          href={link.href}
+                          className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors font-medium py-2 px-4 rounded-lg hover:bg-primary/5"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {link.name}
+                        </a>
+                      );
+                    }
+                  }
+                })}
+                <Button variant="hero" size="lg" className="w-full mt-4" asChild>
+                  <a href="https://discord.com/oauth2/authorize?client_id=1389341948149497886&permissions=1126881307388944&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                     Adicionar Bot
                   </a>
                 </Button>
