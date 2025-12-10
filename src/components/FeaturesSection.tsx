@@ -32,7 +32,7 @@ const features: Feature[] = [
     icon: Gem,
     title: 'Raridade e Valor',
     description: 'Cartas com overall mais alto ou com status elevados são mais raras e valiosas.',
-    color: 'text-yellow-400',
+    color: 'text-red-400',
   },
   {
     icon: Users,
