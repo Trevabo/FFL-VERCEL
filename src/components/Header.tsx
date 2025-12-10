@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from 'FFL-VERCEL/src/assets/logo-02.jpg';
+import logo from 'FFL-VERCEL/src/assets/Logo-02.jpg';
 
 const navLinks = [
   { name: 'Início', href: '/', isRoute: true },
