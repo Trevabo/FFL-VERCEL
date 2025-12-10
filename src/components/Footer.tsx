@@ -42,21 +42,15 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-foreground mb-4 font-display">Redes Sociais</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all">
-                <MessageCircle className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all">
+              <a href="https://x.com/FastFightLeague" className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all">
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/20 transition-all">
-                <Github className="w-5 h-5" />
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary/10 mt-12 pt-8 text-center text-muted-foreground text-sm">
-          <p>© 2024 FFL. Todos os direitos reservados.</p>
+          <p>© 2025 FFL. Todos os direitos reservados.</p>
           <div className="mt-4 flex justify-center gap-6">
             <Link to="/termos-de-servico" className="hover:text-foreground transition-colors">
               Termos de Serviço
