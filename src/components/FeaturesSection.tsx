@@ -13,13 +13,13 @@ const features: Feature[] = [
   {
     icon: Boxes,
     title: 'Coleção Completa',
-    description: 'Mais de 20.000 cartas únicas de jogadores profissionais dos principais campeonatos mundiais de LoL.',
+    description: 'Mais de 25.000 cartas únicas de jogadores profissionais dos principais campeonatos nacionais e internacionais de LoL.',
     color: 'text-primary',
   },
   {
     icon: Sparkles,
     title: 'Sistema de Drops',
-    description: 'Ganhe cartas diariamente! Use /drop a cada 30 minutos para escolher 1 dentre 3 cartas aleatórias e monte sua coleção',
+    description: 'Use /drop a cada 30 minutos para escolher 1 dentre 3 cartas aleatórias e monte sua coleção',
     color: 'text-accent',
   },
   {
