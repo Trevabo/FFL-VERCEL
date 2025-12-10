@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, MessageSquare, Users, Heart, ExternalLink, Shield, Code } from 'lucide-react';
+import { Mail, Twitter, Heart, ExternalLink, Shield } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -18,13 +18,14 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
-              Um bot de Discord para gerenciar suas ligas e torneios de forma rápida e divertida.
+              O melhor bot de coleção de cartas de jogadores profissionais de League of Legends. 
+              Colecione, troque e compita com milhares de jogadores!
             </p>
           </div>
 
-          {/* Links rápidos */}
+          {/* Atalhos */}
           <div>
-            <h3 className="text-lg font-bold text-foreground mb-4">Links Rápidos</h3>
+            <h3 className="text-lg font-bold text-foreground mb-4">Atalhos</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2">
@@ -60,47 +61,42 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-foreground mb-4">Links Úteis</h3>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="https://discord.com/terms" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/termos-servico" 
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <Shield className="w-4 h-4" />
                   Termos de Serviço
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href="https://discord.com/privacy" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/politica-privacidade" 
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <Shield className="w-4 h-4" />
                   Política de Privacidade
-                </a>
+                </Link>
               </li>
               <li>
                 <a 
-                  href="https://github.com" 
+                  href="https://x.com/FastFightLeague" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
-                  <Code className="w-4 h-4" />
-                  GitHub
+                  <Twitter className="w-4 h-4" />
+                  Twitter / X
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contato - ADICIONADO EMAIL AQUI */}
+          {/* Contato */}
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4">Contato</h3>
             <ul className="space-y-4">
               <li>
-                {/* EMAIL DE CONTATO ADICIONADO */}
                 <a 
                   href="mailto:fastfightleague@gmail.com" 
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group/email"
@@ -122,27 +118,11 @@ export default function Footer() {
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group/support"
                 >
                   <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center group-hover/support:bg-blue-500/20 transition-colors">
-                    <MessageSquare className="w-5 h-5 text-blue-500" />
+                    <span className="text-blue-500 font-bold text-lg">#</span>
                   </div>
                   <div>
                     <p className="font-medium">Suporte</p>
                     <p className="text-sm">Servidor do Discord</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://discord.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group/community"
-                >
-                  <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center group-hover/community:bg-green-500/20 transition-colors">
-                    <Users className="w-5 h-5 text-green-500" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Comunidade</p>
-                    <p className="text-sm">Discord Oficial</p>
                   </div>
                 </a>
               </li>
