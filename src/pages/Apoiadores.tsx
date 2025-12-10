@@ -33,6 +33,9 @@ const tiers = [
     mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=ded3a7cace6a401391b3cca1bb97c923'
   }
 ];
+
+const MERCADOPAGO_DONATION_LINK = 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=086e15a61fc8433bb8afb8d164a7a178';
+
 export default function Apoiadores() {
   return <div className="min-h-screen bg-background">
       <Header />
@@ -134,9 +137,14 @@ export default function Apoiadores() {
               <p className="text-muted-foreground mb-4">
                 Prefere fazer uma doação única? 
               </p>
-              <Button variant="heroOutline" size="lg">
+              <Button 
+                variant="heroOutline" 
+                size="lg"
+                onClick={() => window.open(MERCADOPAGO_DONATION_LINK, '_blank', 'noopener,noreferrer')}
+                className="flex items-center justify-center gap-2 mx-auto"
+              >
                 <ExternalLink className="w-5 h-5" />
-                MercadoPago   
+                Doação Única via MercadoPago
               </Button>
             </div>
           </motion.div>
