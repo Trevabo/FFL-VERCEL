@@ -1,5 +1,7 @@
 import { Trophy, Github, Twitter, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '@/assets/Logo-02.jpg';
+
 export default function Footer() {
   return <footer className="border-t border-primary/20 bg-card/30 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -7,7 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <Trophy className="w-8 h-8 text-primary" />
+              <img 
+                src={logo}
+                alt="FFL Logo" 
+                className="w-10 h-10 object-contain rounded-full transition-transform group-hover:scale-105"
+              />
               <span className="text-xl font-bold text-primary">FFL</span>
             </Link>
             <p className="text-muted-foreground max-w-md">
