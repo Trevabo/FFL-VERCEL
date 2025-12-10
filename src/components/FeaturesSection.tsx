@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
-import { Boxes, Repeat, Trophy, Users, Sparkles, Swords, LucideIcon } from 'lucide-react';
+import { Boxes, Repeat, Users, Sparkles, Swords, LucideIcon, Gem } from 'lucide-react';
 
 interface Feature {
   icon: LucideIcon;
@@ -29,7 +29,7 @@ const features: Feature[] = [
     color: 'text-emerald-400',
   },
   {
-    icon: Trophy,
+    icon: Gem,
     title: 'Raridade e Valor',
     description: 'Cartas com overall mais alto ou com status elevados são mais raras e valiosas.',
     color: 'text-yellow-400',
