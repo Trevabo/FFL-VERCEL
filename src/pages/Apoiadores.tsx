@@ -10,21 +10,21 @@ const tiers = [{
   price: 'R$ 4,99/mês',
   color: 'text-green-400',
   borderColor: 'border-green-400/30',
-  benefits: ['Cargo de acordo com o seu apoiador no discord oficial', 'Emote mensal', 'Votação em cosméticos']
+  benefits: ['Cargo de acordo com o seu apoiador no discord oficial.', 'Emote mensal'., 'Votação em cosméticos'.]
 }, {
   name: 'Apoiador Diamante',
   icon: Star,
   price: 'R$ 14,99/mês',
   color: 'text-blue-400',
   borderColor: 'border-blue-400/30',
-  benefits: ['Todos os benefícios anteriores', '+4 Stack de drops', 'Banner exclusivo mensal']
+  benefits: ['Todos os benefícios anteriores.', '+4 Stack de drops.', 'Banner exclusivo mensal.']
 }, {
   name: 'Apoiador Ametista',
   icon: Crown,
   price: 'R$ 24,99/mês',
   color: 'text-primary',
   borderColor: 'border-primary/30',
-  benefits: ['Todos os benefícios anteriores', 'Criação de 1 torneio personalizado por dia', 'Aumento de ganho de lingotes por drops (1-5)']
+  benefits: ['Todos os benefícios anteriores.', 'Criação de 1 torneio personalizado por dia.', 'Aumento de ganho de lingotes por drops (1-5).']
 }];
 export default function Apoiadores() {
   return <div className="min-h-screen bg-background">
