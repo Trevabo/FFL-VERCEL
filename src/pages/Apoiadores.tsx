@@ -5,26 +5,26 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart, Star, Crown, Zap, Gift, ExternalLink } from 'lucide-react';
 const tiers = [{
-  name: 'Apoiador',
+  name: 'Apoiador Esmeralda',
   icon: Heart,
-  price: 'R$ 9,90/mês',
-  color: 'text-pink-400',
-  borderColor: 'border-pink-400/30',
-  benefits: ['Badge exclusivo no perfil', 'Acesso antecipado a novos cards', '+1 drop extra por dia', 'Canal exclusivo no Discord']
+  price: 'R$ 4,99/mês',
+  color: 'text-green-400',
+  borderColor: 'border-green-400/30',
+  benefits: ['Ícone de apoiador tier 1 no discord oficial', 'Emote mensal', 'Votação em cosméticos']
 }, {
-  name: 'Super Apoiador',
+  name: 'Apoiador Diamante',
   icon: Star,
-  price: 'R$ 19,90/mês',
-  color: 'text-yellow-400',
-  borderColor: 'border-yellow-400/30',
-  benefits: ['Todos os benefícios anteriores', '+3 drops extras por dia', 'Chance aumentada de cards raros', 'Moldura exclusiva nas cartas', 'Votação em novos recursos']
+  price: 'R$ 14,99/mês',
+  color: 'text-blue-400',
+  borderColor: 'border-blue-400/30',
+  benefits: ['Todos os benefícios anteriores', '+4 Stack de drops', 'Banner exclusivo mensal']
 }, {
-  name: 'Lendário',
+  name: 'Apoiador Ametista',
   icon: Crown,
-  price: 'R$ 39,90/mês',
+  price: 'R$ 24,99/mês',
   color: 'text-primary',
   borderColor: 'border-primary/30',
-  benefits: ['Todos os benefícios anteriores', '+5 drops extras por dia', 'Card personalizado exclusivo', 'Nome no Hall da Fama', 'Suporte prioritário', 'Acesso beta a novos recursos']
+  benefits: ['Todos os benefícios anteriores', 'Criação de 1 torneio personalizado por dia', 'Aumento de ganho de lingotes por drops (1-5)']
 }];
 export default function Apoiadores() {
   return <div className="min-h-screen bg-background">
