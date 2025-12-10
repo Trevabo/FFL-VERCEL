@@ -26,21 +26,15 @@ const commands: Command[] = [
   },
   {
     icon: Gift,
-    command: '/daily',
+    command: '/diario',
     description: 'Resgate sua recompensa diária e ganhe moedas extras para trocar cartas.',
     color: 'text-yellow-400',
   },
   {
     icon: Repeat,
-    command: '/trade',
+    command: '/trocar',
     description: 'Troque cartas com outros jogadores do servidor. Negocie para completar sua coleção!',
     color: 'text-green-400',
-  },
-  {
-    icon: Trophy,
-    command: '/ranking',
-    description: 'Veja o ranking dos maiores colecionadores do servidor e do mundo.',
-    color: 'text-orange-400',
   },
   {
     icon: Users,
@@ -49,9 +43,15 @@ const commands: Command[] = [
     color: 'text-blue-400',
   },
   {
+    icon: Trophy,
+    command: '/ranking',
+    description: 'Veja o ranking dos maiores colecionadores do servidor e do mundo.',
+    color: 'text-orange-400',
+  },
+  {
     icon: Star,
-    command: '/favoritos',
-    description: 'Marque suas cartas favoritas para acessá-las rapidamente.',
+    command: '/campeonato',
+    description: 'Acesse funções competitivas essenciais, incluindo a inscrição da suas lineups nas disputas.',
     color: 'text-pink-400',
   },
   {
