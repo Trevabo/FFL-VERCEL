@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
-import { Terminal, HelpCircle, Boxes, Gift, Trophy, Users, Repeat, Star, LucideIcon } from 'lucide-react';
+import { Terminal, HelpCircle, Boxes, Gift, Trophy, Users, Repeat, LucideIcon, Medal } from 'lucide-react';
 
 interface Command {
   icon: LucideIcon;
@@ -28,7 +28,7 @@ const commands: Command[] = [
     icon: Gift,
     command: '/diario',
     description: 'Resgate sua recompensa diária e ganhe moedas extras para trocar cartas.',
-    color: 'text-yellow-400',
+    color: 'text-red-400',
   },
   {
     icon: Repeat,
@@ -49,10 +49,10 @@ const commands: Command[] = [
     color: 'text-orange-400',
   },
   {
-    icon: Star,
+    icon: Medal,
     command: '/campeonato',
     description: 'Acesse funções competitivas essenciais, incluindo a inscrição da suas lineups nas disputas.',
-    color: 'text-pink-400',
+    color: 'text-yellow-400',
   },
   {
     icon: HelpCircle,
