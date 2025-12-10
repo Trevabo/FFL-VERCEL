@@ -90,9 +90,21 @@ export default function Apoiadores() {
                         </li>)}
                     </ul>
                     
-                    <Button variant="hero" size="lg" className="w-full">
-                      <Gift className="w-5 h-5" />
-                      Apoiar Agora
+                    <Button 
+                      variant="hero" 
+                      size="lg" 
+                      className="w-full"
+                      asChild
+                    >
+                      <a 
+                        href={tier.mercadopagoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 !no-underline !cursor-pointer"
+                      >
+                        <Gift className="w-5 h-5" />
+                        Apoiar Agora
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
