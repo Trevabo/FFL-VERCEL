@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Twitter, Heart, ExternalLink, Shield } from 'lucide-react';
+import logo from '@/assets/Logo-02.jpg'; // Importe a logo
 
 export default function Footer() {
   return (
@@ -9,12 +10,18 @@ export default function Footer() {
           {/* Logo e descrição */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">FFL</span>
+              {/* Logo atualizada - substituindo o texto pela imagem */}
+              <div className="relative group/logo">
+                <img 
+                  src={logo}
+                  alt="FFL Logo" 
+                  className="w-10 h-10 object-contain rounded-full transition-transform group-hover/logo:scale-105"
+                />
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover/logo:opacity-100 transition-opacity" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">FFL</span>
-                <span className="text-sm text-muted-foreground">Fast Fight League</span>
+                <span className="text-xl font-bold text-foreground">Fast Fight League</span>
+                <span className="text-sm text-muted-foreground">Bot de Discord</span>
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
