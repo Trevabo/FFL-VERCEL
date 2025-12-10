@@ -129,13 +129,13 @@ export default function Apoiadores() {
                 Após apoiar, abra um ticket no Discord!
               </p>
               <p className="text-muted-foreground text-sm">
-                Entre em contato conosco pelo Discord para ativar seus benefícios.
+                Entre em contato conosco para ativar seus benefícios.
               </p>
             </div>
 
             <div>
               <p className="text-muted-foreground mb-4">
-                Prefere fazer uma doação única? 
+                Prefere fazer uma com valor personalizado? 
               </p>
               <Button 
                 variant="heroOutline" 
