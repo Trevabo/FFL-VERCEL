@@ -56,37 +56,21 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Links úteis */}
+          {/* Redes Sociais */}
           <div>
-            <h3 className="text-lg font-bold text-foreground mb-4">Links Úteis</h3>
+            <h3 className="text-lg font-bold text-foreground mb-4">Redes Sociais</h3>
             <ul className="space-y-2">
-              <li>
-                <Link 
-                  to="/termos-servico" 
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                >
-                  <Shield className="w-4 h-4" />
-                  Termos de Serviço
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/politica-privacidade" 
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                >
-                  <Shield className="w-4 h-4" />
-                  Política de Privacidade
-                </Link>
-              </li>
               <li>
                 <a 
                   href="https://x.com/FastFightLeague" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
                 >
-                  <Twitter className="w-4 h-4" />
-                  Twitter / X
+                  <div className="w-8 h-8 rounded-full bg-black/10 dark:bg-white/10 flex items-center justify-center group-hover:bg-black/20 dark:group-hover:bg-white/20 transition-colors">
+                    <Twitter className="w-4 h-4" />
+                  </div>
+                  <span>Twitter / X</span>
                 </a>
               </li>
             </ul>
@@ -110,23 +94,34 @@ export default function Footer() {
                   </div>
                 </a>
               </li>
-              <li>
-                <a 
-                  href="https://discord.gg/SEU_CONVITE" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group/support"
-                >
-                  <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center group-hover/support:bg-blue-500/20 transition-colors">
-                    <span className="text-blue-500 font-bold text-lg">#</span>
-                  </div>
-                  <div>
-                    <p className="font-medium">Suporte</p>
-                    <p className="text-sm">Servidor do Discord</p>
-                  </div>
-                </a>
-              </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Links úteis e informações legais */}
+        <div className="mt-8 pt-8 border-t border-primary/20">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div className="flex flex-wrap gap-6">
+              <Link 
+                to="/termos-servico" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Shield className="w-3 h-3" />
+                Termos de Serviço
+              </Link>
+              <Link 
+                to="/politica-privacidade" 
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
+              >
+                <Shield className="w-3 h-3" />
+                Política de Privacidade
+              </Link>
+            </div>
+            
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+              <span className="text-sm text-muted-foreground">Bot Online</span>
+            </div>
           </div>
         </div>
 
@@ -144,13 +139,7 @@ export default function Footer() {
             </p>
           </div>
           
-          <div className="flex items-center gap-6">
-            {/* Status do bot */}
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-              <span className="text-sm text-muted-foreground">Bot Online</span>
-            </div>
-            
+          <div className="flex items-center gap-2">
             <p className="text-sm text-muted-foreground flex items-center gap-2">
               Feito com <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pela comunidade
             </p>
