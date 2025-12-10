@@ -99,11 +99,11 @@ export default function HeroSection() {
             }} className="grid grid-cols-3 gap-8">
               {[{
                 label: 'Cartas',
-                value: '25000+',
+                value: '25K+',
                 icon: Sparkles
               }, {
                 label: 'Servidores',
-                value: '1.2K+',
+                value: '350+',
                 icon: Users
               }, {
                 label: 'Colecionadores',
