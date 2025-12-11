@@ -20,7 +20,7 @@ const tiers = [
     price: 'R$ 14,99/mês',
     color: 'text-blue-400',
     borderColor: 'border-blue-400/30',
-    benefits: ['Todos os benefícios anteriores.', '+4 Stack de drops.', 'Banner exclusivo mensal.'],
+    benefits: ['Todos os benefícios anteriores.', '+4 Stack de drops.','Campeonatos diários e únicos para apoiadores Diamante+', 'Banner exclusivo mensal.'],
     mercadopagoLink: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=3115c3973ade4d11b6fbda10372e5498'
   },
   {
