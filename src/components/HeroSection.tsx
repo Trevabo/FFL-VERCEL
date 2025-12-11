@@ -88,40 +88,40 @@ export default function HeroSection() {
             </div>
 
            {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="grid grid-cols-3 gap-8"
-          >
-            {[
-              {
-                label: 'Cartas',
-                value: '25K+',
-                icon: Sparkles
-              },
-              {
-                label: 'Servidores',
-                value: '350+',
-                icon: Users
-              },
-              {
-                label: 'Colecionadores',
-                value: '600+',
-                icon: Trophy
-              }
-            ].map((stat, index) => (
-              <div key={index} className="text-center lg:text-left">
-                <div className="flex items-center gap-2 justify-center lg:justify-start mb-1">
-                  <stat.icon className="w-6 h-6 text-primary" />
-                  <span className="text-3xl md:text-4xl font-bold text-foreground font-display">
-                    {stat.value}
-                  </span>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="grid grid-cols-3 gap-8"
+            >
+              {[
+                {
+                  label: 'Cartas',
+                  value: '25K+',
+                  icon: Sparkles
+                },
+                {
+                  label: 'Servidores',
+                  value: '350+',
+                  icon: Users
+                },
+                {
+                  label: 'Colecionadores',
+                  value: '600+',
+                  icon: Trophy
+                }
+              ].map((stat, index) => (
+                <div key={index} className="text-center lg:text-left">
+                  <div className="flex items-center gap-2 justify-center lg:justify-start mb-1">
+                    <stat.icon className="w-6 h-6 text-primary" />
+                    <span className="text-3xl md:text-4xl font-bold text-foreground font-display">
+                      {stat.value}
+                    </span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">{stat.label}</span>
                 </div>
-                <span className="text-sm text-muted-foreground">{stat.label}</span>
-              </div>
-            ))}
-          </motion.div>
+              ))}
+            </motion.div>
 
           {/* Right Content - Cards Carousel */}
           <motion.div initial={{
