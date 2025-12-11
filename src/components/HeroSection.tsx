@@ -87,7 +87,7 @@ export default function HeroSection() {
               </Button>
             </div>
 
-            {/* Stats */}
+           {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -112,15 +112,13 @@ export default function HeroSection() {
                 }
               ].map((stat, index) => (
                 <div key={index} className="text-center lg:text-left">
-                      <div className="flex items-center gap-2 justify-center lg:justify-start mb-1">
-                        <stat.icon className="w-6 h-6 text-primary" />
-                        <span className="text-3xl md:text-4xl font-bold text-foreground font-display">
-                          {stat.value}
-                        </span>
-                      </div>
-                      <span className="text-sm text-muted-foreground">{stat.label}</span>
-                    </div>
+                  <div className="flex items-center gap-2 justify-center lg:justify-start mb-1">
+                    <stat.icon className="w-6 h-6 text-primary" />
+                    <span className="text-3xl md:text-4xl font-bold text-foreground font-display">
+                      {stat.value}
+                    </span>
                   </div>
+                  <span className="text-sm text-muted-foreground">{stat.label}</span>
                 </div>
               ))}
             </motion.div>
