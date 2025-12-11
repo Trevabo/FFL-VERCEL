@@ -37,24 +37,18 @@ export default function HeroSection() {
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <motion.div initial={{
-            opacity: 0,
-            x: -50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8
-          }} className="text-center lg:text-left">
-            <motion.div initial={{
-              opacity: 0,
-              y: 20
-            }} animate={{
-              opacity: 1,
-              y: 0
-            }} transition={{
-              delay: 0.2
-            }} className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left"
+          >
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6"
+            >
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm text-primary font-medium">Coleção de Cards • League of Legends</span>
             </motion.div>
@@ -87,7 +81,7 @@ export default function HeroSection() {
               </Button>
             </div>
 
-           {/* Stats */}
+            {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -122,18 +116,15 @@ export default function HeroSection() {
                 </div>
               ))}
             </motion.div>
+          </motion.div> {/* Fecha o Left Content */}
 
           {/* Right Content - Cards Carousel */}
-          <motion.div initial={{
-            opacity: 0,
-            x: 50
-          }} animate={{
-            opacity: 1,
-            x: 0
-          }} transition={{
-            duration: 0.8,
-            delay: 0.3
-          }} className="relative hidden lg:block">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative hidden lg:block"
+          >
             <div className="relative w-full h-[500px] flex items-center justify-center">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -168,8 +159,8 @@ export default function HeroSection() {
               </div>
             </div>
           </motion.div>
-        </div>
-      </div>
+        </div> {/* Fecha o grid principal */}
+      </div> {/* Fecha o container */}
     </section>
   );
 }
