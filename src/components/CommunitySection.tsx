@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Users, MessageCircle, Award, Sparkles } from 'lucide-react';
 
 const stats = [
-  { icon: Users, value: '250+', label: 'Membros' },
+  { icon: Users, value: '800+', label: 'Membros' },
   { icon: MessageCircle, value: '1K+', label: 'Mensagens/dia' },
   { icon: Award, value: '1.2M+', label: 'Cartas Coletadas' },
   { icon: Sparkles, value: '24/7', label: 'Suporte Ativo' },
